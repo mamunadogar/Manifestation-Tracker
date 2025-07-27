@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manifestation Tracker ✨</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <form id="manifest-form">
+      <h1>✨ Manifestation Tracker ✨</h1>
+      
+      <!-- username -->
+      <div class="form-group">
+        <label for="username">Your Name</label>
+        <input type="text" id="username" placeholder="Enter your magical name"/>
+        <small></small>
+      </div>
+
+      <!-- affirmation -->
+      <div class="form-group">
+        <label for="affirmation">Affirmation</label>
+        <input type="text" id="affirmation" placeholder="I am attracting all that is meant for me ✨"/>
+        <small></small>
+      </div>
+
+      <!-- date -->
+      <div class="form-group">
+        <label for="date">Manifestation Date</label>
+        <input type="date" id="date" />
+        <small></small>
+      </div>
+
+      <!-- submit btn -->
+      <button type="submit">Add to My Universe 💫</button>
+    </form>
+
+    <!-- result section -->
+    <div class="affirmation-list" id="affirmation-list">
+      <h2>Your Manifestations 🌌</h2>
+      <ul id="list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

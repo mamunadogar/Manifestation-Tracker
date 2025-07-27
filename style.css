@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #ffe6f0, #ffeef8);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 10px;
+  color: #4a2c2c;
+}
+
+.container {
+  background-color: #fff5fa;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(255, 105, 180, 0.15);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 450px;
+  width: 100%;
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #ff69b4;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #d14e87;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #c65b8c;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ffc0da;
+  background: #fff0f7;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff69b4;
+  outline: none;
+  background-color: #fff6fb;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #ff69b4;
+  color: white;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background: #e754a1;
+  transform: scale(1.02);
+}
+
+/* List Styling */
+.affirmation-list ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.card {
+  background: #ffeaf5;
+  border-left: 4px solid #ff69b4;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(255, 105, 180, 0.12);
+  animation: slideUp 0.5s ease;
+}
+
+.card p {
+  margin: 6px 0;
+}
+
+.card small {
+  color: #8c3a63;
+  font-size: 12px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
